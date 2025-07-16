@@ -5,64 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Your Presentation Studio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero-section fade-in">
-    <div class="container">
-      <h1>Your Presentation Studio</h1>
-      <p>We craft visually stunning and impactful presentations tailored for professionals, educators, and startups.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">🎯 PresStudio</h1>
+      <ul class="nav-links">
+        <li><a href="#demos">Demos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-content fade-in">
+      <h1>Beautiful Presentations That Speak</h1>
+      <p>We help you impress investors, educate students, and win clients — one slide at a time.</p>
       <a href="#contact" class="btn primary-btn">Let’s Work Together</a>
     </div>
   </header>
 
-  <!-- Demo Videos Section -->
+  <!-- Demos -->
   <section id="demos" class="fade-in">
     <div class="container">
       <h2 class="section-title">See Our Work</h2>
-      <p class="section-subtitle">Explore examples of the professional presentation styles we offer.</p>
-      <div class="video-slider">
-        <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/YgZ1oWzwq0Q?si=Z6Akm5iriG8fB8zC" frameborder="0" allowfullscreen></iframe>
-          <p>Startup Pitch Deck</p>
+      <p class="section-subtitle">Explore our styles and presentation quality.</p>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+        <div class="carousel">
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/YgZ1oWzwq0Q?si=Z6Akm5iriG8fB8zC" frameborder="0" allowfullscreen></iframe>
+            <p>Startup Pitch Deck</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/-HdAysxMMA0?si=eeiuv65trknZMIoT" frameborder="0" allowfullscreen></iframe>
+            <p>Educational Presentation</p>
+          </div>
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/FdDujNkarEA?si=kq0yd105rjehxt-f" frameborder="0" allowfullscreen></iframe>
+            <p>Minimal Business Report</p>
+          </div>
         </div>
-        <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/-HdAysxMMA0?si=eeiuv65trknZMIoT" frameborder="0" allowfullscreen></iframe>
-          <p>Educational Presentation</p>
-        </div>
-        <div class="video-box">
-          <iframe src="https://www.youtube.com/embed/FdDujNkarEA?si=kq0yd105rjehxt-f" frameborder="0" allowfullscreen></iframe>
-          <p>Minimal Business Report</p>
-        </div>
+        <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA -->
   <section id="cta" class="fade-in">
     <div class="container">
-      <h2>Need a Presentation That Delivers Results?</h2>
-      <p>Whether it's for investors, school, or your next pitch — we design it for impact.</p>
-      <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+      <h2>Ready to Elevate Your Next Presentation?</h2>
+      <a href="#contact" class="btn secondary-btn">Contact Me</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="fade-in">
     <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <p>If you’d like to place an order, discuss pricing, or have custom requests — just email me directly.</p>
-      <a href="mailto:yourname@example.com" class="btn email-btn">📩 Send Email</a>
+      <h2 class="section-title">Let's Connect</h2>
+      <p>Want a quote or custom request? Email me directly.</p>
+      <a href="mailto:yourname@example.com" class="btn email-btn">📩 Email Me</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Your Presentation Studio. All rights reserved.</p>
+      <p>&copy; 2025 PresStudio. Crafted with ❤️</p>
     </div>
   </footer>
 
